@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: monitor_db
+    restart: always
+    command: --default-time-zone=-06:00
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: monitor_sistema
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d   # ejecuta 01_schema.sql y 02_seed.sql al crear el contenedor
+      - db_data:/var/lib/mysql
+
+  php:
+    build: .
+    container_name: monitor_backend
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - "C:/:/host_c:ro" 
+    depends_on:
+      - db
+
+volumes:
+  db_data:
