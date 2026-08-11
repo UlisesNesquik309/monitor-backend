@@ -1,5 +1,5 @@
 -- 02_seed.sql
--- Autor: (pon aquí tu nombre)
+-- Autor: (Jose Ulises Robledo Gutierrez)
 -- Qué hace: inserta un usuario de ejemplo para poder probar el login
 -- desde el primer momento, sin depender de que el registro ya funcione.
 --

@@ -1,7 +1,7 @@
 <?php
 /**
  * consultar_historial.php
- * Autor: (pon aquí tu nombre)
+ * Autor: (Jose Ulises Robledo Gutierrez)
  * Qué hace: consulta las lecturas guardadas entre una fecha inicial
  * y una fecha final, para el análisis histórico que pide el profesor.
  * Método esperado: GET

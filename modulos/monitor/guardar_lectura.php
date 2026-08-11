@@ -1,7 +1,7 @@
 <?php
 /**
  * guardar_lectura.php
- * Autor: (pon aquí tu nombre)
+ * Autor: (Jose Ulises Robledo Gutierrez)
  * Qué hace: recibe desde React los valores de cpu, ram y disco
  * (los mismos que ya se mostraron en la gráfica) y los inserta
  * en la tabla "lecturas" para poder consultarlos después por fecha.

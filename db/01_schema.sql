@@ -1,5 +1,5 @@
 -- 01_schema.sql
--- Autor: (pon aquí tu nombre)
+-- Autor: (Jose Ulises Robledo Gutierrez)
 -- Qué hace: crea la base de datos y las tablas del sistema.
 -- Este archivo NO inserta datos, solo la estructura.
 

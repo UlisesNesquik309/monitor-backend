@@ -1,7 +1,7 @@
 <?php
 /**
  * database.php
- * Autor: (pon aquí tu nombre)
+ * Autor: (Jose Ulises Robledo Gutierrez)
  * Qué hace: crea la conexión PDO hacia MySQL. El host "db" es el nombre
  * del servicio de MySQL dentro de docker-compose.yml (no uses "localhost"
  * si trabajas con Docker).

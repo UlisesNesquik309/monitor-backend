@@ -1,7 +1,7 @@
 <?php
 /**
  * obtener_lectura.php
- * Autor: (pon aquí tu nombre)
+ * Autor: (Jose Ulises Robledo Gutierrez)
  * Qué hace: ejecuta el script de Python (monitor.py), que lee el uso
  * de CPU, RAM y disco en tiempo real, y regresa esos datos a React
  * en formato JSON. NO guarda nada en la BD, solo lee y regresa.
