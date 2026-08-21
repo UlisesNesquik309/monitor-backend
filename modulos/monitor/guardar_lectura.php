@@ -39,6 +39,10 @@ if (!is_numeric($cpu) || !is_numeric($ram) || !is_numeric($disco)) {
     Response::error("LECTURA_DATOS_INVALIDOS", "cpu, ram y disco deben ser numéricos", 400);
 }
 
+if ($cpu < 0 || $cpu > 100 || $ram < 0 || $ram > 100 || $disco < 0 || $disco > 100) {
+    Response::error("LECTURA_FUERA_DE_RANGO", "cpu, ram y disco deben estar entre 0 y 100", 400);
+}
+
 try {
     $database = new Database();
     $conn = $database->conectar();
