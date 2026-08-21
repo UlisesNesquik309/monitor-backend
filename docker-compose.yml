@@ -23,9 +23,18 @@ services:
       - "8080:80"
     volumes:
       - ./:/var/www/html
-      - "C:/:/host_c:ro" 
+      - "C:/:/host_c:ro"
     depends_on:
       - db
+
+  frontend:
+    build: ../frontend
+    container_name: monitor_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - php
 
 volumes:
   db_data:
