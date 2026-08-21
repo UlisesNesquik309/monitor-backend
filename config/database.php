@@ -27,6 +27,7 @@ class Database
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             error_log("Error de conexión a la BD: " . $e->getMessage());
+            throw new Exception("No se pudo conectar a la base de datos");
         }
         return $this->conn;
     }
